@@ -1,0 +1,156 @@
+﻿<html>
+<head>
+     <title>Grafuri orientate</title>
+<style>
+body {
+  background-image: url("Imagini/fundalgo.jpg");
+  background-attachment: fixed;
+ color :black;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+</style>
+
+</head>
+<body>
+<center><b><font face=" " color="orange " size="6"><U>Grafuri orientate </U></font></b></center>
+<table>
+<tr><td><u>Definiție.</u><br><b> Se numeşte graf orientat sau digraf o pereche ordonată de mulțimi notată G=(V, U), unde:<ul type=" ">
+<li>V este o mulțime finită şi nevidă ale cărei elemente <br<se numesc noduri sau vârfuri;</li>
+<li>U este o mulțime de perechi ordonate de elemente distincte <br>din V ale cărei elemente se numesc arce.</li></ul>
+Exemplu:<br>
+V={1,2,3,4,5,6}<br>
+U={(1,6),(2,1),(2,4),(3,2),(4,2),(5,4),(6,1),(6,4)}<br>
+Observăm că arcele (1,6) și (6,1) sunt distincte.
+<td><img src="Imagini/avioane.jpg" width=" 500" height="300"><br></td></tr></table>
+<table>
+<tr><td cellpadding="300"><img src="Imagini/grafo1.png" align="center"></td>
+<td> <img src="Imagini/grafo2.png" align="left"></td>
+<td><b><font face=" " color="orange " size="5 ">Noțiuni</font></b><br>
+->extremități ale unui arc: pentru arcul u=(x,y), se numesc extremități ale sale nodurile x şi y;<ul type=" square">
+<li>x se numeşte<b> extremitate inițială;</b></li>
+<li>y se numeşte<b> extremitate finală;</b></li>
+<li>y se numește<b> succesor al lui x;</b></li>
+<li>x se numește <b>predecesor al lui y </b></li></ul></td>
+<td><img src="Imagini/grafo3.png"></td></tr></table>
+<table>
+<tr><td><b><font face=" " color="orange " size="5 ">Grade</font></b><br><br>
+<u>Definiție.</u><br> Fie G=(V, U) un graf orientat și x un nod al său.<br>
+Se numeşte grad exterior al nodului x, numărul arcelor de forma (x,y)(adică numărul arcelor care ies din x), notat d<sup>+</sup>(x).<br>
+Se numeşte grad interior al nodului x, numărul arcelor de forma (y,x) (adică numărul arcelor care intră în x), notat d<sup>-</sup>(x).<br>
+<font face=" " color="red">  ! Teoremă: Într-un graf orientat, suma gradelor exterioare a tuturor nodurilor este egală cu suma gradelor interioare a tuturor nodurilor și cu numărul de arce.</font><br>
+Pentru graful alăturat:<br>
+<font face=" " color="#F781BE ">d<sup>+</sup>(2)=1</font><br>
+<font face=" " color=" #F781BE">d<sup>-</sup>(2)=3</font><br></td>
+<td>
+<img src="Imagini/grade.png"></td></tr></table>
+<table>
+<tr><td><b><font face=" " color="orange " size="5 ">Matricea de adiacență</font></b><br>
+Fie G=(V,U) un graf orientat cu n noduri, în care nu există mai multe arce de la un nod la altul. <br>Matricea de adiacență a grafului este o matrice cu n linii și n coloane și elemente 0 sau 1, astfel:<BR><img src="Imagini/magraf.png"><br>
+<img src=" Imagini/mago1.png"> <br>
+ <font face=" " color=" ">Observăm că matricea de adiacență:<br><ul>
+<li>=>are zero pe diagonală (dacă în graf nu avem bucle)</li>
+<li>=>nu este simetrică față de diagonala principală</li>
+<img src="Imagini/mago2.png"></td>
+<td> <b><font face=" " color="orange " size="5 ">Lista de arce</font></b> <br>
+Lista de arce a unui graf orientat reprezintă o mulțime (familie, dacă arcele se pot repeta) ce conține toate arcele din graf.<br><br>
+Pentru graful alăturat, lista de arce este:<br><br>
+U={(1,6),(2,1),(2,4),(3,2),(4,2),(5,4),(6,1),(6,4)}<br>
+Pentru reprezentarea în memorie putem folosi:<ul type=" ">
+<li>un tablou unidimensional cu elemente de tip struct {int I,J;}</li>
+<li>două tablouri unidimensionale cu elemente de tip int</li>
+<li>o listă alocată dinamic</li></ul><br>
+<img src="Imagini/golistadearce.png" align="center"></td></tr>
+<tr><td><b><font face=" " color="orange " size="5 ">Lista de adiacență</font></b><br>
+<img src="Imagini/golistadeadiacenta.png"></td>
+<td>Pentru un graf orientat cu G=(V,U) se va memora numărul de noduri n și apoi, pentru fiecare nod x, lista succesorilor lui x, adică nodurilor y cu proprietatea că există arcul (x,y).<br>
+Pentru graful alăturat, listele de adiacență sunt:<pre>
+1: 6
+2: 1 4
+3: 2
+4: 2
+5: 4
+6: 1 2 4</pre></td></tr></table>
+<table>
+<tr><td><b><font face=" " color="orange " size="5 ">Lista de adiacență</font></b><br>
+<u>Definiție.</u><br> Fie G=(V, U) un graf orientat. Se numeşte graf parțial al grafului G, graful orientat G1=(V, U1), unde U1 ⊆ U.<br>
+<font face=" " color="red">Fie G=(V, U) un graf orientat. Un graf parțial al grafului G, se obține păstrând vârfurile şi
+eliminând eventual nişte arce (se pot elimina şi toate arcele sau chiar nici unul).</font><br>
+<u>Definiție.</u><br> Fie G=(V, U) un graf orientat. Se numeşte subgraf al grafului G graful orientat G1=(V1,U1) unde V1 ⊆ V iar U1 conține toate arcele din U care au extremitățile în V1.<br>
+<font face=" " color="red">Fie G=(V,U) un graf orientat. Un subgraf al grafului G, se obține ştergând eventual anumite vârfuri şi odată cu acestea şi arcele care le admit ca extremitate (nu se pot şterge toate vârfurile deoarece
+s-ar obține un graf cu mulțimea vârfurilor vidă)</font></td></tr>
+<tr><td><img src="Imagini/gopartial.png"></td></tr></table>
+<table>
+<tr><td><b><font face=" " color="orange " size="5 ">Graf complet</font></b><br>
+<u>Definiție.</u><br> Fie G=(V, U) un graf orientat. Graful G se numește graf complet dacă oricare două vârfuri
+distincte ale sale sunt adiacente.
+
+Două vârfuri x și y sunt adiacente dacă:
+
+între ele există arcul (x,y), sau
+între ele există arcul (y,x), sau
+între ele există arcele (x,y) şi (y,x)
+Teoremă: Numărul de grafuri orientate complete cu n noduri este 3<sup>n*(n-1)&frasl;2</sup></td>
+<td><img src="Imagini/gocomplet.png"></td></tr>
+<tr><td><b><font face=" " color="orange " size="5 ">Graf turneu</font></b><br>
+<u>Definiție:</u><br> Un graf orientat este turneu, dacă oricare ar fi două vârfuri i şi j, i≠j, între ele există un singur arc: arcul (i,j) sau arcul (j,i).
+Proprietăți:
+Orice graf turneu este graf complet.
+Avem 2<sup>n*(n-1)&frasl;</sup>2 grafuri turneu cu n noduri.
+În orice graf turneu există un drum elementar care trece prin toate vârfurile grafului.</td>
+<td><img src="Imagini/goturneu.png"></td></tr></table>
+<br><br>
+<table>
+<tr><td><b><font face=" " color="orange " size="5 ">Lanț. Drum</font></b><br>
+<u>Definiție:</u><br>
+ Fie G=(V, U) un graf orientat. Se numește lanț, în graful G, o succesiune de arce, notată
+L = (u1 , u2 ,..., uk) cu proprietatea ca oricare două arce consecutive au o extremitate comună (nu are importanță orientarea arcelor).
+sau<br>
+Definiție: Fie G=(V, U) un graf orientat. Se numește lanț, în graful G, o succesiune de noduri, notată
+L = (x1 , x2 ,..., xp) cu proprietatea ca oricare două noduri consecutive sunt adiacente.<br>
+
+Lungimea unui lanț este egală cu numărul de arce din care este alcătuit.<br>
+
+Primul nod și ultimul nod dintr-un lanț formează extremitățile lanțului.<br>
+<B>Un lanț (drum) se numește elementar dacă în el nu se repetă noduri. <br>Un lanț (drum) se numește simplu dacă în el nu se repetă arce.</b><br>
+<td><img src="Imagini/golantcircuitel.png"></td>
+<td><u>Definiție:</u><br>
+ Se numește circuit un drum simplu în care extremitatea inițială și finală sunt egale. Se numește circuit elementar un circuit în care, cu excepția extremităților, nu se repetă noduri.<br>
+
+Lungimea unui circuit este reprezentată de numărul de arce din care acesta este alcătuit.<br>
+
+Exemple În graful alăturat:<br>
+
+(1,6,2,1) și (1,6,4,2,1) sunt circuite elementare.
+</td></tr>
+</table>
+<table>
+<tr><td><br><br><br><br><b><font face=" " color="orange " size="5 ">Graf hamiltonian</font></b><br>
+<u>Definiții:</u><br>
+ Fie un graf orientat G=(V,U).<br>
+
+<b>Un drum elementar care conține toate nodurile grafului se numește <u>drum hamiltonian.</u></b><br>
+
+<b>Un circuit elementar care conține toate nodurile grafului se numește<u> circuit hamiltonian.</u></b>br>
+
+<b>Un graf care conține un circuit hamiltonian se numește <u>graf hamiltonian.</u></b><br>
+
+Exemplu:<br> Graful orientat desenat mai jos este hamiltonian, deoarece con ține circuitul hamiltonian (2, 1, 5 , 6, 4, 3, 2)<br>
+<img src="Imagini/goh.png"></td>
+<td><b><font face=" " color="orange " size="5 ">Graf eulerian</font></b><br>
+<u>Definiții:</u><br> Fie un graf orientat G=(V,U).
+
+<b>Un drum care conține toate arcele grafului se numește <u>drum eulerian.</u></b><br>
+
+<b>Un circuit care conține toate arcele grafului se numește <u>circuit eulerian.</u></b><br>
+
+<b>Un graf care conține un circuit eulerian se numește<u> graf eulerian.</u></b><br>
+
+<font face=" " color=" red" > ! Teoremă: Un graf fără noduri izolate este eulerian dacă și numai dacă este conex și pentru fiecare nod, gradul interior este egal cu cel exterior.</face><br>
+
+Exemplu:<br> Graful orientat de mai jos este eulerian.<br>
+<img src="Imagini/goe.png"></td></tr></table>
+<center><a href="Backtracking.html " target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href="GRAFURI NEORIENTATE.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center>
+
+</body>
+</html>

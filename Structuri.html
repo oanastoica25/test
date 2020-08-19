@@ -1,0 +1,79 @@
+﻿<html>
+<head>
+     <title> Structuri </title>
+<style>
+body {
+  background-image: url("Imagini/fundal8.jpg");
+  background-attachment: fixed;
+}
+</style>
+</head>
+<body>
+<center><b><font face="Arial" size="6" color="FF A0 7A">STRUCTURI</font></b><br>
+<table>
+<tr>
+     <td><ol type=" ">
+       <li><u><b>STRUCTURA LINIARĂ</b></u></li><br>
+<strong>Structura liniară</strong> este reprezentată de instrucțiuni care se execută la fel la fiecare executare a programului (sau a secvenței de program), indiferent care sunt valorile variabilelor cu care se lucrează.<br></td>
+     <td><img src="Imagini/structl.png" width=" 400" height=" "200><td>
+<tr collspan="2" >
+     <td cellpadding="3" collpadding="3"><b><u> 2 .STRUCTURA ALTERNATIVĂ (IF-ELSE ȘI SWITCH)</b></u><br>
+<blockquote><strong>Structura alternativă <u>(decizională)</u></strong> execută un anumit set de instrucțiuni dacă o condiție este îndeplinită, altfel execută alt set de instrucțiuni. 
+<font face=" " color="red">Condiția va returna întotdeauna un rezultat de tip boolean (TRUE sau FALSE). În C++ structura decizională (alternativă) este <strong>if</strong></font>.<p>Forma generală a unei structuri alternative este:</blockquote> </p><br>
+<img src="Imagini/ifelse.png" width=" " height= " "></td> <br><br>
+<td><li><u><b>3.STRUCTURA REPETITIVĂ </b></u></li><br>
+<p><font face=" " color=" red">Structurile repetitive execută o instrucțiune de un anumit număr de ori, sau cât timp o condiție este adevărată.</font> Se mai numesc și bucle sau cicluri.
+
+<p><strong>Structurile repetitive</strong> pot fi:<ol type=" "></p>
+
+<li><i>cu număr cunoscut de pași (iterații)</i>– se cunoaște de la început de câte ori se va execută instrucțiunea</li>
+<li><i>cu număr necunoscut de pași (iterații).</i></li> Instrucțiunea se execută cât timp o condiție este adevărată. La fiecare pas se va evalua condiția, iar dacă aceasta este adevărată se va executa instrucțiunea.
+<p><strong>Structurile repetitive cu număr necunoscut de pași</strong> pot fi:<ul type=" circle"></p>
+<li><u>cu test inițial:</u> mai întâi se evaluează condiția;<li>
+ dacă este adevărată se execută instrucțiunea și procesul se reia.
+<li><u>cu test final:</u> mai întâi se execută instrucțiunea, apoi se evaluează condiția;</li> Dacă este adevărată, procesul se reia.
+Instrucțiunea care se execută în mod repetat poartă numele de corp al structurii repetitive, corp al ciclului, corp al buclei și de foarte multe ori este o instrucțiune compusă.</ul></ol></td></tr>
+</ul>
+</table>
+<hr>
+<table>
+<center><b><font face =" " size="5" color="orange">INSTRUCȚIUNEA</font><font face=" " size=" 4" color="red"> SWITCH</font></b></center>
+<tr>
+   <td><b><font face=" " color="blue" >Execuţie:</font></b><br><p>Prima data este evaluata expresia scrisa intre paranteze rotunde, la "switch()", apoi valoarea expresiei este comparata pe rand cu fiecare valoare determinata de "case". Daca se gaseste o identitate se executa codul asociat acelui "case". Apoi se iese din instructiunea "switch".
+Daca, parcurgand fiecare "case", nu se gaseste o egalitate, se executa codul de la "default".
+Prin folosirea lui <strong>"break"</strong> se opreste parcurgerea corpului instructiunii atunci cand s-a gasit o valoare egala cu 'expresie' si se iese din "switch".
+<font face=" " color="yellow">! Instructiunea "switch" poate inlocui un sir de conditii cu "else if".</font></td>
+<td><img src="Imagini/switch.jpg" width="300 " height="220 "></td></tr></table>
+<table>
+<center><b><font face =" " size="5" color="orange">INSTRUCȚIUNEA</font><font face=" " size=" 4" color="red"> WHILE DO</font></b></center>
+<tr>
+   <td> Este folosita pentru implementarea structurilor repetitive condiţionate anterior.<br>
+<b><font face=" " color="blue" >Execuţie:</font></b><ol type=" ">
+<li> <u>Se evaluează expresia.</u>
+Dacă expresie este adevărată (are valoare nenulă) se execută corpul instrucţiunii</li>
+while şi se revine la evaluarea expresiei.
+<li><u>Când expresie devine falsă se trece la instrucţiunea imediat următoare
+instrucţiunii while. </u> </li></ol>
+<font face=" " color="red">! Dacă expresie este falsă de la început, corpul de instrucţiuni al lui <i>while</i> nu se execută niciodată.</font> </td><br>
+   <td> <img src="Imagini/whiledo.png" width=" 600" height=" 200" ></td></tr><br></table>
+<table>
+<tr><center><b><font face =" " size="5" color="orange">INSTRUCȚIUNEA</font><font face=" " size=" 4" color="red">  DO-WHILE</font></b></center></tr>
+    <tr><td> Este utilizată pentru implementarea structurilor repetitive condiţionate posterior.<br>
+<b><font face=" " color="blue" >Execuţie:</font></b><ol type=" ">
+<li> <u> Se execută instructiunea .</u>
+<li><u>Se evaluează expresia.
+Dacă expresia este adevărată ( ≠0 ) se revine la pasul 1, altfel se trece la instrucţiunea imediat
+următoare lui do-while. </u> </li></ol>
+<font face=" " color="red">! Corpul de instrucţiuni al lui do-while se execută cel puţin o dată, chiar dacă expresie este falsă de la
+început.</font></td><br></ol>
+    <td> <img src="Imagini/dowhile.png" width=" 500" height=" 200" ></td></tr></table>
+<table>
+<center><b><font face =" " size="5" color="orange">INSTRUCȚIUNEA</font><font face=" " size=" 4" color="red">  FOR</font></b></center>
+<tr collspan="2">
+<td><img src="Imagini/for.png" height="400" width="800"></td>
+<td> <i><p>Instrucțiunea repetitivă cu un număr cunoscut de pași <strong>FOR</strong> se folosește când numărul de repetiții este cunoscut –<font face=" " color="red" >un numar fix de ori</font>.<p></td></tr></table>
+<font face=" "  size="5 " color="F6C " >Câteva probleme care se rezolvă cu aceste instrucțiuni!<a href="file:///F:/atestat/alogoritmifundamentali.html"></a></font><br>
+<center><a href="Vocabularul.html" target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href=" algoritmifundamentali.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"</a></center>
+</body>
+</html>

@@ -1,0 +1,118 @@
+﻿<html>
+<head><title>Backtracking</title>
+<style>
+h1{
+  color: white ;
+   text-align: center;
+}
+h2{
+color: purple;
+}
+
+body {
+  background-image: url("Imagini/fundal13.jpg");
+  background-attachment: fixed;
+ background-size:cover;
+ background-repeat: no-repet;
+background-image{   
+opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+color:color;
+text-shadow: 0.5 px 0.5 px 0.5px black;
+}
+
+
+</style>
+</head>
+<body>
+<h1>BACKTRACKING</h1>
+<table>
+<tr><td><p><b>Backtracking </b>este o metodă de parcurgere sistematică a spaţiului
+soluţiilor posibile al unei probleme.<br>
+Este o metodă generală de programare, şi poate fi adaptă pentru orice
+problemă pentru care dorim să obţinem toate soluţiile posibile, sau să selectăm o
+soluţie optimă, din mulţimea soluţiilor posibile.
+Backtracking este însă şi cea mai costisitoare metodă din punct de vedere
+al timpului de execuţie</p></td>
+<td><img src="Imagini/formageneralabk.png" width="400 " height=" 200"></td></tr></table>
+<table>
+<b><u><h2>Generare permutări</h2></u></b><br>
+<tr> <td><img src=" Imagini/permutaribk1.png"></td>
+<td><img src="Imagini/permutaribk2.png"></td>
+<td>Să se genereze toate permutările primelor n numere naturale.
+Vom genera pe rând soluţiile problemei în vectorul v=(v1,v2,v3,...,vn), unde vkεSk.
+Să facem următoarele observaţii:<ol type=" ">
+<li>Pentru această problemă toate mulţimile Sk sunt identice, Sk={1,2,3,....,n}.
+La pasul k selectăm un element din mulţimea Sk.</li>
+<li> Întrucât în cadrul unei permutări elementele nu au voie să se repete
+această condiţie reprezentă condiţia de continuare a problemei.</li>
+<li> Obţinem o soluţie în momentul în care completăm vectorul cu n elemente.</li></ol>
+Exemplu pentru <b>n=3 S1= S2= S3={1,2,3}<br>
+(1,2,3) (1,3,2) (2,1,3) (2,3,1) (3,1,2) (3,2,1)</b><br></td>
+</tr></table>
+<table>
+<tr>
+<td >
+<b><u><h2> Generare produs cartezian</h2></u></b><br>
+<img src="Imagini/produscartezian.png"></td>
+<td>Se dau n mulţimi, ca cele de mai jos:<br>
+S1={1,2,3,...,w1}<br>
+S2={1,2,3,...,w2}<br>
+.........................<br>
+Sn={1,2,3,...,wn}<br>
+Se cere să se gnereze produsul lor cartezian.<br>
+Exemplu:<br>
+pemtru n=3 şi urmăroarele mulţimi<br>
+S1={1,2} w1=2<br>
+S2={1,2,3} w2=3<br>
+S3={1,2} w3=2<br>
+produsul cartezian este:<br>
+S1 xS2 xS3 ={ (1,1,1),(1,1,2),(1,2,1),(1,2,2),(1,3,1),(1,3,2),
+(2,2,1),(2,1,2),(2,2,1),(2,2,2),(2,3,1),(2,3,2)}<br>
+
+Vom memora numărul de elemente al fiecăerei mulţimi Sk , într-un vector w. Soluţiile
+le vom construi pe rând în vectorul v</td></tr>
+<tr>
+<td><b><u><h2>Generare combinări</h2></u></B><br>
+Se citesc n şi p numere naturale cu p<=n. Să se genereze toate combinările
+de n elemente luate câte p.<br>
+Exemplu pentru n=3, p=2. obţinem (1,2), (1,3), (2,3)<br>
+Vom genera pe rând soluţiile problemei în vectorul v=(v1,v2,v3,...,vn), unde vkεSk.
+Să facem următoarele observaţii:<br>
+1. Pentru această problemă toate mulţimile Sk sunt identice, Sk={1,2,3,....,n}.<br>
+La pasul k selectăm un element din mulţimea Sk.<br>
+2. În cadrul unei combinări elementele nu au voie să se repete.
+Să mai observăm şi faptul că dacă la un moment dat am generat de exemplu
+soluţia (1,2), combinarea (2,1) nu mai poate fi luată în considerare, ea nu mai
+reprezintă o soluţie. <br>
+Din acest motiv vom considera că elementele vectorului
+reprezintă o soluţie, numai dacă se află în ordine strict crescătoare.
+Acestea reprezintă condiţiile de continuare ale problemei.K<br>
+3. Oţinem o soluţie în momentul în care vectorul conţine p elemente.
+Putem genera toate elementele unei combinări, parcurgând mulţimea {1,2,3,...,n},
+apoi să verificăm condiţiile de continuare aşa cum am procedat în cazul permutărilor.<br>
+Putem însă îmbunătăţii timpul de execuţie, selectând din mulţimea {1,2,3,...,n}, la
+pasul k un element care este în mod obligatoriu mai mare decăt elementul v[k-1],
+adică i=v[k-1]+1.</td>
+<td><img src="Imagini/combinari.png"></td></tr>
+<tr>
+<td><b><u><h2>Generare submultimi</h2></u></B><br>
+<img src="Imagini/submultimi.png"></td>
+<td>Să se genereze toate submulţimile mulţimii S={1,2,3, ... ,n}.<br>
+Exemplu: pentru n=3, S={1,2,3}, submulţimile sunt următoarele:
+Φ-mulţimea vidă, {1},{2},{3},{1,2},{1,3},{2,3},{1,2,3}<br>
+Să observăm că pentru a obţine toate submulţimile unei mulţimi, este suficient
+să generăm pe rând C<sup>1</sup><sub>n</sub>   C<sup>2</sup><sub>n</sub>  .... C<sup>3</sup><sub>n</sub>
+, pentru mulţimea S={1,2,3, ... ,n}, la care trebuie
+să adăugăm mulţimea vidă şi mulţimea S.<br>
+În aceste condiţii, este suficient să modificăm doar funcţia principală pentru a
+genera toate submulţimile şi afişarea datelor ca mulţimi de elemente. Funţiile BK şi
+soluţie generează în realitate C<sup>p</sup><sub>n</sub> elemente.</td></tr></table>
+<br>
+<center><a href="Fișiere.html " target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"></a>
+<a href="grafuri orientate.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center>
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+﻿<html>
+<head>
+   <title>Probleme rezolvate cu structurile prezentate</title>
+<style>
+body {
+  background-image: url("Imagini/fundal5.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ background-size: cover;
+}
+</style>
+</head>
+<body>
+<center><b><font face= " " size=" 6" color="DC 14 3C"> ALGORITMI FUNDAMENTALI</font></b></center><br>
+<table>
+<tr collspan="2">
+  <td><i><p><font face=" " size=" 4"><blockquote>Aceşti algoritmi au fost concepuţi spre a veni în ajutorul programatorilor, care îi
+folosesc ori de câte ori este necesar în probleme, fără a mai fi nevoie să-i elaboreze de
+fiecare dată.Aceştia se referă la separarea cifrelor unui număr (folosit de fiecare dată
+când în rezolvarea unei probleme este necesar accesul la cifrele unui număr),
+determinarea divizorilor proprii ai unui număr natural dat, testarea dacă un număr
+natural mai mare ca 1 este prim, determinarea celui mai mare divizor comun a două
+numere naturale date, descompunerea unui număr natural în factori primi, determinarea
+maximului/minimului unui şir de numere citite, pe rând, de la dispozitivul de intrare</i></font></blockquote></p></td>
+<td><img src="Imagini/algoritmi.png" width="400 " height="200 " ></td>
+</tr></table>
+<table>
+<tr><td><center><b><u><font face=" " size="4">1.Separarea cifrelor unui numar</font></b></u></center><br>
+<p>Se va folosi rezultatul din matematică conform căruia restul împărţirii la 10 al unui
+număr întreg pozitiv îl reprezintă ultima cifră a numărului (cea mai puţin semnificativă),
+iar câtul împărţirii la 10, numărul fără ultima cifră.</p></td>
+<td><center><u><b><font face=" " size="4">2.Testul de număr prim</font></u></b></center><br>
+<p>Matematica ne spune că <font face=" " size="4" color="red">un număr
+este prim dacă are doar doi divizori,
+pe 1 şi numărul însuşi, deci când nu
+are divizori proprii.</font>Dacă numarul
+are cel puţin un divizor propriu,
+atunci numărul nu este prim.</td></tr><br>
+<tr><td><img src="Imagini/cifrele.png" weight="400 " height="200" align="right"></td>
+<td><img src="Imagini/testarenrprim.png" width="400 " height="300" align="right"</td></tr>
+</table><br>
+<table>
+<tr rowspan="2">
+<center><b><u><font face=" " size="4">3.Determinarea divizorilor proprii ai unui număr natural dat</b></font></u></center>
+<td><img src="Imagini/divizoriiproprii1.png" width="500 " height="300 "align="center"></td>
+<td>
+Putem continua cu exemplele, dar şi din acestea se poate
+observa că:
+Este suficient să testăm care din valorile cuprinse între 2 şi
+[n/2] împart exact numărul n dat şi astfel identificăm, pe
+rând, divizorii proprii ai numărului, care vor putea fi
+prelucraţi conform cerinţelor enunţului.
+<p><font face=" " color="blue">Exemple cu cele două structuri repetitive:</font><p></td></tr></table><br>
+<center><b><u><font face=" " size="4">4. Determinarea celui mai mare divizor comun a două numere naturale<br>
+<pre>                                                               - ALGORITMUL LUI EUCLID -                                                               
+</font></b></u></center>
+<table>
+<tr>
+<td><br>
+<td><img src="Imagini/euclid2.png" width="300 " height="300" ></td>
+<td>Să presupunem că avem două numere naturale a şi b,
+pentru care trebuie să aflăm cel mai mare divizor
+comun(cmmdc).Se reţine în variabila r restul împărţirii
+lui a la b.Variabila a ia valoarea variabilei b iar b ia
+valoarea restului obţinut în urma împărţirii lui a la b.
+Aceste operaţii se execută cât timp b este diferit de
+0. Cel mai mare divizor comun va fi variabila a.</td>
+<td><img src="Imagini/euclid1.png"  width="300 " height="300"> </td></tr></table><br><br>
+<center><b><u><font face=" " size="4">5. Descompunerea în factori primi a unui număr natural</font></u></b></center><br>
+<table>
+<tr>
+<td><img src="Imagini/descompunerefp.png" width="300 " height="300"></td>
+<td><font face=" " color="blue">Algoritm:</font><ul type=" ">
+<li>Se porneşte de la primul factor prim posibil, 2.
+<strong>Cât timp</strong> numărul dat este diferit de 1, se execută
+operaţiile:</li>
+<li>Dacă factorul îl divide pe n îl afişăm.
+<strong>Cât timp</strong> numărul se împarte exact la un factor prim
+se execută împărţirea, se prelucrează factorul şi câtul devine deîmpărţit
+se trece apoi la următorul factor prim.</li></ol></td></tr><br></table>
+<center><b><u><font face=" " size="4">6. Determinarea valorii minime/maxime dintr-un
+şir de numere</font></u></b></center><br>
+<table>
+<tr><td><center><b><font face=" " size="4"><u>Determinarea valorii maxime</u></font></b></center><br>
+<p>Se presupune că primul număr citit este maximul. Se citesc
+apoi, pe rând, numerele şi la fiecare pas se compară numărul
+citit cu maximul existent. Dacă numărul citit este mai mare
+decât maximul, se înlocuieşte maximul.</p><br>
+<td><center><u><b><font face=" " size="4">Determinarea valorii minime</font></b></u></center><br>
+<p>Se presupune că primul număr citit este minimul. Se citesc
+apoi, pe rând, numerele şi la fiecare pas se compară numărul
+citit cu minimul existent. Dacă numărul citit este mai mic
+decât minimul, se înlocuieşte minimul.</p><br></td></tr>
+<tr><td><img src="Imagini/minim.png" width="300 " height="300"align="center"></td>
+<td><img src="Imagini/maxim.png"  width="300 " height="300" align="center"></td></tr></table><br>
+<center><a href=" Structuri.html" target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"></a>
+<a href=" vectori.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center>
+</body>
+</html>

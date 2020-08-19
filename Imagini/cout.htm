@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#">
+<head>
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <link rel="profile" href="http://gmpg.org/xfn/11" />
+    <link rel="pingback" href="http://www.c4learn.com/xmlrpc.php" />
+
+        <link rel="shortcut icon" href="//www.c4learn.com/tutorials/wp-content/themes/porto/porto/images/logo/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon-precomposed" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-8564525228188727",
+    enable_page_level_ads: true
+  });
+</script>
+
+<title>C++ cout - C++ Programming - c4learn.com</title>
+
+    <!--[if IE]>
+    <link rel="stylesheet" href="http://www.c4learn.com/wp-content/themes/porto/porto/css/ie8.css?ver=2.5.3" />
+    <![endif]-->
+        <style rel="stylesheet" property="stylesheet" type="text/css">
+    #header .logo {
+        max-width: 170px;
+    }
+    @media (min-width: 1170px) {
+        #header .logo {
+            max-width: 250px;
+        }
+    }
+    @media (max-width: 991px) {
+        #header .logo {
+            max-width: 250px;
+        }
+    }
+    @media (max-width: 767px) {
+        #header .logo {
+            max-width: 250px;
+        }
+    }
+    #header.sticky-header .logo {
+        max-width: 100px;
+    }
+    </style>
+    
+<!-- This site is optimized with the Yoast SEO plugin v3.7.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<link rel="canonical" href="http://www.c4learn.com/cplusplus/cpp-cout/" />
+<link rel="publisher" href="https://plus.google.com/u/0/b/114887307565350821957/+C4learncom/posts"/>
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="C++ cout - C++ Programming - c4learn.com" />
+<meta property="og:description" content="Cout : Display Output to User Using Screen(Monitor) In C++ Insertion operator is used to display value to the user. The value may be some message in the form of string or variable. Syntax : Display Value to User cout &lt;&lt; variable; Explanation : Insertion Operator Include &lt;iostream.h&gt; header file to use cin. #include&lt;iostream.h&gt;//traditional C++ &hellip;" />
+<meta property="og:url" content="http://www.c4learn.com/cplusplus/cpp-cout/" />
+<meta property="og:site_name" content="Learn Programming Language Step By Step" />
+<meta property="article:publisher" content="https://www.facebook.com/c4learn" />
+<meta property="article:author" content="ptaral81" />
+<meta property="article:tag" content="C++ : Basics" />
+<meta property="article:section" content="C++ Programming" />
+<meta property="article:published_time" content="2012-03-24T18:25:17+05:30" />
+<meta property="article:modified_time" content="2013-11-25T08:32:40+05:30" />
+<meta property="og:updated_time" content="2013-11-25T08:32:40+05:30" />
+<meta property="og:image" content="http://pics.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator.png" />
+<meta property="og:image:width" content="634" />
+<meta property="og:image:height" content="375" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="Cout : Display Output to User Using Screen(Monitor) In C++ Insertion operator is used to display value to the user. The value may be some message in the form of string or variable. Syntax : Display Value to User cout &lt;&lt; variable; Explanation : Insertion Operator Include &lt;iostream.h&gt; header file to use cin. #include&lt;iostream.h&gt;//traditional C++ [&hellip;]" />
+<meta name="twitter:title" content="C++ cout - C++ Programming - c4learn.com" />
+<meta name="twitter:site" content="@c4learn" />
+<meta name="twitter:image" content="http://pics.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator.png" />
+<meta name="twitter:creator" content="@c4learn" />
+<!-- / Yoast SEO plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/11.2.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/www.c4learn.com\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55358,56760,9792,65039],[55358,56760,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='http://www.c4learn.com/wp-includes/css/dist/block-library/style.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-plugins-css'  href='http://www.c4learn.com/wp-content/themes/porto/porto/css/plugins_1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-theme-css'  href='http://www.c4learn.com/wp-content/themes/porto/porto/css/theme_1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='masterslider-main-css'  href='http://www.c4learn.com/wp-content/themes/porto/porto/css/masterslider.main.css' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-skin-css'  href='http://www.c4learn.com/wp-content/themes/porto/porto/css/skin_1.css' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-style-css'  href='http://www.c4learn.com/wp-content/themes/porto/porto/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='porto-google-fonts-css'  href='//fonts.googleapis.com/css?family=Open+Sans%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7CShadows+Into+Light%3A300%2C300italic%2C400%2C400italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%7C&#038;subset=latin%2Cgreek-ext%2Ccyrillic%2Clatin-ext%2Cgreek%2Ccyrillic-ext%2Cvietnamese' type='text/css' media='all' />
+<script type='text/javascript' src='http://www.c4learn.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='http://www.c4learn.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='http://www.c4learn.com/wp-content/themes/porto/porto/js/plugins.min.js?ver=2.5.3'></script>
+<link rel='https://api.w.org/' href='http://www.c4learn.com/wp-json/' />
+<link rel="alternate" type="application/json+oembed" href="http://www.c4learn.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.c4learn.com%2Fcplusplus%2Fcpp-cout%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://www.c4learn.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.c4learn.com%2Fcplusplus%2Fcpp-cout%2F&#038;format=xml" />
+<meta name="generator" content="Powered by Visual Composer - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="http://www.c4learn.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.css" media="screen"><![endif]--><!--[if IE  8]><link rel="stylesheet" type="text/css" href="http://www.c4learn.com/wp-content/plugins/js_composer/assets/css/vc-ie8.css" media="screen"><![endif]--><noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><script data-no-minify="1">(function(w,d){function a(){var b=d.createElement("script");b.async=!0;b.src="http://www.c4learn.com/wp-content/plugins/wp-rocket/inc/front/js/lazyload.1.0.2.min.js";var a=d.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)}w.attachEvent?w.attachEvent("onload",a):w.addEventListener("load",a,!1)})(window,document);</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-35959999-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	
+
+</head>
+
+<body class="post-template-default single single-post postid-7026 single-format-standard full blog-1 wpb-js-composer js-comp-ver-4.7 vc_responsive">
+    
+    <div class="page-wrapper"><!-- page wrapper -->
+
+        
+                    <div class="header-wrapper clearfix"><!-- header wrapper -->
+                                
+                    <header id="header" class="header-corporate header-10 search-sm">
+    
+    <div class="header-main">
+        <div class="container">
+            <div class="header-left">
+                                <div class="logo">                    <a href="http://www.c4learn.com/" title="Learn Programming Language Step By Step - Simple Programming Tutorials" rel="home">
+                        <img class="img-responsive standard-logo" width="" height="" src="//pics.c4learn.com/2013/05/c4learn.gif" alt="Learn Programming Language Step By Step" /><img class="img-responsive retina-logo" width="" height="" src="//pics.c4learn.com/2013/05/c4learn.gif" alt="Learn Programming Language Step By Step" style="display:none;" />                    </a>
+                </div>            </div>
+
+            <div class="header-right">
+                <div class="header-right-top">
+                                        <a class="mobile-toggle"><i class="fa fa-reorder" style="font-size:24px"></i></a>
+		    <!-- <a class="mobile-index-toggle visible-xs"><i class="fa fa-reorder"></i></a> -->
+                </div>
+                <div class="header-right-bottom">
+                    <div id="main-menu">
+                        <ul id="menu-main-menu" class="main-menu mega-menu show-arrow"><li id="nav-menu-item-8092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home  narrow "><a href="http://www.c4learn.com/" class="">Home</a></li>
+<li id="nav-menu-item-12808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub narrow "><h5><i class="fa fa-list"></i>Programming</h5>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-12809" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.c4learn.com/learn-c-programming-language/" class="">C Programming</a></li>
+	<li id="nav-menu-item-6427" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.c4learn.com/javaprogramming/" class="">Java Programming</a></li>
+</ul></div></div>
+</li>
+<li id="nav-menu-item-10439" class="menu-item menu-item-type-custom menu-item-object-custom  narrow "><a href="http://www.c4learn.com/c-programs/" class="">C Programs</a></li>
+<li id="nav-menu-item-11548" class="menu-item menu-item-type-custom menu-item-object-custom  narrow "><a href="http://www.c4learn.com/mcq" class="">MCQ</a></li>
+<li id="nav-menu-item-11608" class="menu-item menu-item-type-custom menu-item-object-custom  narrow "><a href="http://c4learn.com/tutorials/" class="">Tutorials</a></li>
+<li id="nav-menu-item-11910" class="menu-item menu-item-type-custom menu-item-object-custom  narrow "><a href="http://www.c4learn.com/programs/" class="">Examples</a></li>
+<li id="nav-menu-item-11674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub narrow "><a href="http://www.c4learn.com/civilservices/" class="">Exams</a>
+<div class="popup"><div class="inner" style=""><ul class="sub-menu">
+	<li id="nav-menu-item-12828" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.c4learn.com/civilservices/" class="">Civil Services</a></li>
+	<li id="nav-menu-item-12829" class="menu-item menu-item-type-custom menu-item-object-custom " data-cols="1"><a href="http://www.c4learn.com/current-affairs/" class="">Current Affairs</a></li>
+</ul></div></div>
+</li>
+</ul>                    </div>
+                    <div class="share-links"><a target="_blank" class="share-facebook" href="https://www.facebook.com/c4learn" title="Facebook"></a><a target="_blank" class="share-twitter" href="https://twitter.com/c4learn" title="Twitter"></a><a target="_blank" class="share-rss" href="http://feeds.feedburner.com/feedburner/fOhV" title="RSS"></a><a target="_blank" class="share-pinterest" href="https://www.pinterest.com/c4learn/" title="Pinterest"></a><a target="_blank" class="share-googleplus" href="https://plus.google.com/+C4learncom/posts" title="Google Plus"></a></div>                </div>
+            </div>
+        </div>
+    </div>
+</header>
+                            </div><!-- end header wrapper -->
+        
+        
+        
+        <div id="main" class="column2 column2-right-sidebar boxed no-breadcrumbs"><!-- main -->
+
+            
+                        <div class="container">
+                <div class="row">
+            
+            <!-- main content -->
+            <div class="main-content col-md-9">
+
+            
+                            
+
+<div id="content" role="main">
+
+    
+        
+<article class="post post-medium post-7026 type-post status-publish format-standard has-post-thumbnail hentry category-cplusplus tag-c-basics">
+
+    <div class="row">
+        
+        <div id="sidebarIndex" class="col-sm-4" style="background-color: #F9F9F9; color: black;">
+            <h1 class="widgettitle">Table of Content</h1><ul class="tag-post-list" style = "font-size: 14px;color: black;list-style:none;margin-left: -40px;"><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5205"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-history/">C++ History</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5213"><a style="color: black;" href="http://www.c4learn.com/cplusplus/why-cpp-is-not-portable-like-java/">C++ Portability</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5217"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-first-program/">C++ First Program</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5223"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-concept-overview/">C++ Concept Overview</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5282"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-compilers-ide/">C++ Compilers & IDE</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5575"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-program-structure/">C++ Program Structure</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5717"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-comments/">C++ Comments</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-6986"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-cin/">C++ cin</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-7026"><strong>C++ cout</strong></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-7086"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-setw-setting-field-width/">C++ setw() </a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-7355"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-characteristics-and-features/">C++ Characteristics</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-7359"><a style="color: black;" href="http://www.c4learn.com/cplusplus/oop-advantages/">Advantages And Features Of Object Oriented Programming</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-8370"><a style="color: black;" href="http://www.c4learn.com/c-programming/learn-c-programming-language-step-by-step-tutorials/">Learn C++ Programming Language </a></li></ul><h1 class="widgettitle">C++ Tokens</h1><ul class="tag-post-list" style = "font-size: 14px;color: black;list-style:none;margin-left: -40px;"><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-5593"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-variable-naming/">C++ Variable Naming</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11204"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-characters/">C++ legal Characters</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11205"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-identifiers-tokens/">C++ Identifiers </a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11206"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-keywords/">C++ Keywords</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11207"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-constants/">C++ Constants</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11229"><a style="color: black;" href="http://www.c4learn.com/cplusplus/c-operators/">C++ Operators</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11404"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-while-loop/">C++ While loop</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11406"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-for-loop-2/">C++ for loop</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11408"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-do-while-loop/">C++ do...while loop</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11410"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-nested-loops/">C++ Nested loops</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11411"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-break-statement/">C++ break statement</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11412"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-continue-statement/">C++ continue statement</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11414"><a style="color: black;" href="http://www.c4learn.com/cplusplus/c-goto-statements/">C++ goto statements</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11418"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-if-statement/">C++ if statement</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11422"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-if-else-statement/">C++ if...else statement</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11424"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-else-if-ladder/">C++ else..if ladder</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11426"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-switch-case-statement/">C++ Switch Case </a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11428"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-nested-if-statement/">C++ Nested If Statement</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11430"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-functions-introduction/">C++ Functions</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11808"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-array-basic/">C++ Array Basic</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11813"><a style="color: black;" href="http://www.c4learn.com/cplusplus/c-multi-dimensional-array/">C++ Multi-dimensional Array</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-11818"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-pointer-array/">C++ Pointer to an Array</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12280"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-inheritance-basics/">C++ Inheritance basics</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12296"><a style="color: black;" href="http://www.c4learn.com/cplusplus/assignment-operator-overloading/">C++ Overloading assignment operator</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12292"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-constructor-basic-concept/">C++ Constructor basic concept</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12303"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-relational-operators/">C++ Relational Operators</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12304"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-logical-operator/">C++ Logical Operator</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12314"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-assignment-operator/">C++ Assignment Operator</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12328"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-bitwise-operators/">C++ Bitwise Operators</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12298"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-destructor-basics/">C++ Destructor Basics</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12317"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp_sizeof_operator/">C++ sizeof Operator</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12308"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-conditional-operator/">C++ Conditional Operator</a></li><li style="line-height: 35px;border-bottom: 1px solid #DDDDDD;" id="posts-by-tag-item-12345"><a style="color: black;" href="http://www.c4learn.com/cplusplus/cpp-pointer-operator/">C++ Pointer Operator</a></li></ul>
+        </div>
+        <div class="col-sm-8 articleMain">
+            
+
+                <div class="post-content">
+
+                    <h2 class="entry-title">C++ cout</h2>
+
+
+
+                    <span class="vcard" style="display: none;"><span class="fn"><a href="http://www.c4learn.com/author/admin/" title="Posts by Pritesh" rel="author">Pritesh</a></span></span><span class="updated" style="display:none">2013-11-25T08:32:40+05:30</span>                    <div class="entry-content">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- c4learn_topper_article -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8564525228188727"
+     data-ad-slot="1377501757"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+<hr>
+<div class="pre-btn"><a href="http://www.c4learn.com/cplusplus/cpp-cin/" rel="prev"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous Page</a></div>
+
+<div class="nxt-btn"><a href="http://www.c4learn.com/cplusplus/cpp-setw-setting-field-width/" rel="next">Next Page <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></div>
+<div class="clearer"></div>
+<hr>
+                        <h2>Cout : Display Output to User Using Screen(Monitor)</h2>
+<p>In C++ Insertion operator is used to display value to the user. The value may be some message in the form of string or variable.</p>
+<h2>Syntax : Display Value to User</h2>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> variable<span style="color: #406080">;</span></pre>
+<h2>Explanation : Insertion Operator</h2>
+<ul>
+<li>Include <strong>&lt;iostream.h&gt;</strong> header file to use cin.</li>
+</ul>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #004a43">#</span><span style="color: #004a43">include</span><span style="color: #800000">&lt;</span><span style="color: #40015a">iostream.h</span><span style="color: #800000">&gt;</span><span style="color: #595979">//traditional C++</span>
+
+OR
+
+<span style="color: #004a43">#</span><span style="color: #004a43">include</span><span style="color: #800000">&lt;</span><span style="color: #40015a">iostream</span><span style="color: #800000">&gt;</span><span style="color: #595979">// ANSI Standard</span>
+<span style="color: #200080;font-weight: bold">using</span> namespace std<span style="color: #406080">;</span></pre>
+<ul>
+<li>cout is used for <span style="text-decoration: underline"><strong>displaying data on the screen</strong></span>.</li>
+<li>The operator &lt;&lt; called as <span style="text-decoration: underline"><strong>insertion operator</strong></span> or <span style="text-decoration: underline"><strong>put to operator</strong></span>.</li>
+<li>The <span style="text-decoration: underline"><strong>Insertion operator</strong></span> can be overloaded.</li>
+<li>Insertion operator is <span style="text-decoration: underline"><strong>similar to the printf()</strong></span> operation in C.</li>
+<li>cout is the <span style="text-decoration: underline"><strong>object of ostream class</strong></span>.</li>
+<li>Data flow direction is from variable to output device.</li>
+<li>We can still use <span style="text-decoration: underline"><strong>printf() for displaying an output.</strong></span>.</li>
+<li><strong>Multiple outputs</strong> can be displayed using cout.</li>
+</ul>
+<h2>Live Example : Displaying Output on Screen</h2>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #004a43">#</span><span style="color: #004a43">include</span><span style="color: #800000">&lt;</span><span style="color: #40015a">iostream.h</span><span style="color: #800000">&gt;</span>
+<span style="color: #200080;font-weight: bold">using</span> <span style="color: #200080;font-weight: bold">namespace</span> <span style="color: #0066ee">std</span><span style="color: #406080">;</span>
+
+<span style="color: #200080;font-weight: bold">int</span> <span style="color: #400000">main</span><span style="color: #308080">(</span><span style="color: #308080">)</span>
+<span style="color: #406080">{</span>
+    <span style="color: #200080;font-weight: bold">int</span> number1<span style="color: #406080">;</span>
+    <span style="color: #200080;font-weight: bold">int</span> number2<span style="color: #406080">;</span>
+
+    <span style="color: #003060">cout</span><span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span><span style="color: #800000">"</span><span style="color: #1060b6">Enter First Number: </span><span style="color: #800000">"</span><span style="color: #406080">;</span>
+    <span style="color: #595979">/* Display the message to tell the </span>
+<span style="color: #595979">          user to do appropriate action */</span>
+    <span style="color: #003060">cin</span><span style="color: #308080">&gt;</span><span style="color: #308080">&gt;</span>number1<span style="color: #406080">;</span>
+
+    <span style="color: #003060">cout</span><span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span><span style="color: #800000">"</span><span style="color: #1060b6">Enter Second Number: </span><span style="color: #800000">"</span><span style="color: #406080">;</span>
+    <span style="color: #595979">/* Display the message to tell the </span>
+<span style="color: #595979">          user to do appropriate action */</span>
+
+    <span style="color: #003060">cin</span><span style="color: #308080">&gt;</span><span style="color: #308080">&gt;</span>number1<span style="color: #406080">;</span>
+    <span style="color: #003060">cin</span><span style="color: #308080">&gt;</span><span style="color: #308080">&gt;</span>number2<span style="color: #406080">;</span>
+
+    <span style="color: #003060">cout</span><span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span><span style="color: #800000">"</span><span style="color: #1060b6">Addition : </span><span style="color: #800000">"</span><span style="color: #406080">;</span>
+
+    <span style="color: #003060">cout</span><span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span>number1<span style="color: #308080">+</span>number2<span style="color: #406080">;</span>  <span style="color: #595979">//Display Result</span>
+
+    <span style="color: #200080;font-weight: bold">return</span> <span style="color: #008c00">0</span><span style="color: #406080">;</span>
+<span style="color: #406080">}</span></pre>
+<p><a href="http://img.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator.png"><img class="aligncenter size-full wp-image-7077" title="Cout Operator in C++ Insertion Operator" src="http://img.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator.png" alt="Cout Operator in C++ Insertion Operator" width="634" height="375" srcset="http://pics.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator.png 634w, http://pics.c4learn.com/2012/03/Cout-Operator-in-C++-Insertion-Operator-300x177.png 300w" sizes="(max-width: 634px) 100vw, 634px" /></a></p>
+<h2>Output :</h2>
+<pre style="color: #000020;background: #f6f8ff">Enter First Number<span style="color: #406080">:</span> <span style="color: #008c00">8</span>
+Enter Second Number<span style="color: #406080">:</span> <span style="color: #008c00">8</span>
+Addition <span style="color: #406080">:</span> <span style="color: #008c00">16</span></pre>
+<h2>Different ways of using cout in c++</h2>
+<h3>Way 1. Simple Use of cout and Insertion Operator:</h3>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #200080;font-weight: bold">int</span> tempNumber<span style="color: #308080">=</span><span style="color: #008c00">6</span><span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> tempNumber<span style="color: #406080">;</span></pre>
+<ul>
+<li>In above example, <span style="text-decoration: underline"><strong>tempNumber</strong></span> is declared as integer variable. And value 6 is assigned to it.</li>
+<li>when control comes over cout , <span style="text-decoration: underline"><strong>Program will display the output to screen</strong></span>.</li>
+<li>Likewise we can <span style="text-decoration: underline"><strong>display integer, character or string.</strong></span></li>
+</ul>
+<h3>Way 2 : Cascading Multiple Variables in Cout</h3>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #200080;font-weight: bold">int</span> a<span style="color: #308080">=</span><span style="color: #008c00">10</span><span style="color: #406080">;</span>
+<span style="color: #200080;font-weight: bold">int</span> b<span style="color: #308080">=</span><span style="color: #008c00">20</span><span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> a <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> b<span style="color: #406080">;</span></pre>
+<p>is similar to &#8211;</p>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #200080;font-weight: bold">int</span> a<span style="color: #308080">=</span><span style="color: #008c00">10</span><span style="color: #406080">;</span>
+<span style="color: #200080;font-weight: bold">int</span> b<span style="color: #308080">=</span><span style="color: #008c00">20</span><span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> a<span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> b<span style="color: #406080">;</span></pre>
+<h3>Way 3 : cout to display string</h3>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #003060">string</span> <span style="color: #406080">;</span> <span style="color: #595979">//for displaying string output</span>
+
+<span style="color: #200080;font-weight: bold">or</span>
+
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">Display String</span><span style="color: #800000">"</span> <span style="color: #406080">;</span></pre>
+<ul>
+<li>The extraction operator is also <span style="text-decoration: underline"><strong>used for getting string</strong></span>.</li>
+<li>When <span style="text-decoration: underline"><strong>blank space is detected</strong></span>, extraction operator stops reading input.</li>
+<li>cin <span style="text-decoration: underline"><strong>allow us to enter only one word</strong></span>.</li>
+<li>For reading entire line, we use <span style="text-decoration: underline"><strong>getline() function</strong></span>.</li>
+</ul>
+<h3>Way 4 : Use of expression in cout</h3>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #200080;font-weight: bold">int</span> num1<span style="color: #406080">;</span>
+<span style="color: #200080;font-weight: bold">int</span> num2<span style="color: #406080">;</span>
+
+<span style="color: #003060">cin</span> <span style="color: #308080">&gt;</span><span style="color: #308080">&gt;</span> num1<span style="color: #406080">;</span>
+<span style="color: #003060">cin</span> <span style="color: #308080">&gt;</span><span style="color: #308080">&gt;</span> num2<span style="color: #406080">;</span>
+
+<span style="color: #003060">cout</span><span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">Addition is : </span><span style="color: #800000">"</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> num1<span style="color: #308080">+</span>num2 <span style="color: #406080">;</span></pre>
+<ul>
+<li><span style="text-decoration: underline"><strong>Expression can be evaluated</strong></span> inside cout statement.</li>
+<li>In above example, we are accepting 2 values from user.</li>
+<li>The <span style="text-decoration: underline"><strong>addition of two numbers is displayed on the screen</strong></span></li>
+<li>For that we use the <span style="text-decoration: underline"><strong>expression for adding two numbers in the output statement directly</strong></span>.</li>
+</ul>
+<h3>Way 5 : Display Output on new line</h3>
+<ul>
+<li>We can use &#8216;<strong>n</strong>&#8216; or &#8216;<strong>endl</strong>&#8216; to print the output on new line.</li>
+</ul>
+<pre style="color: #000020;background: #f6f8ff"><span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">Hello,</span><span style="color: #0f69ff">n</span><span style="color: #800000">"</span><span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">My name is </span><span style="color: #0f69ff">n</span><span style="color: #1060b6">Pooja...</span><span style="color: #800000">"</span><span style="color: #406080">;</span>
+
+<span style="color: #200080;font-weight: bold">or</span>
+
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">Hello,</span><span style="color: #800000">"</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span>endl<span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">My name is</span><span style="color: #800000">"</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span>endl<span style="color: #406080">;</span>
+<span style="color: #003060">cout</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span> <span style="color: #800000">"</span><span style="color: #1060b6">Pooja...</span><span style="color: #800000">"</span> <span style="color: #308080">&lt;</span><span style="color: #308080">&lt;</span>endl<span style="color: #406080">;</span></pre>
+<h2>Output :</h2>
+<pre style="color: #000020;background: #f6f8ff">Hello<span style="color: #308080">,</span>
+My name is
+Pooja<span style="color: #308080">.</span><span style="color: #308080">.</span><span style="color: #308080">.</span></pre>
+<p>*External Link : <a href="http://www.cplusplus.com/doc/tutorial/basic_io/" title="cout" target="_blank">More on cout</a> | <a href="http://www-numi.fnal.gov/offline_software/srt_public_context/WebDocs/Companion/cxx_crib/input_output.html" title="www-numi" target="_blank">cout Statement</a> | <a href="http://www.arachnoid.com/cpptutor/student3.html" title="Sample Example" target="_blank">Sample Example</a></p>
+<div class="c4lea-after-post" id="c4lea-1994906837">
+<div id="disqus_thread"></div>
+<script>
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://programmingtutorials.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script></div>
+
+
+<hr>
+<div class="pre-btn"><a href="http://www.c4learn.com/cplusplus/cpp-cin/" rel="prev"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> Previous Page</a></div>
+
+<div class="nxt-btn"><a href="http://www.c4learn.com/cplusplus/cpp-setw-setting-field-width/" rel="next">Next Page <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></a></div>
+<div class="clearer"></div>
+<hr>
+
+<div style="display: flex;justify-content: center;">
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- c4learn_bottom_article -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:336px;height:280px"
+     data-ad-client="ca-pub-8564525228188727"
+     data-ad-slot="2854234956"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+</div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+
+        
+        
+        
+</article>        
+</div>
+
+        
+
+</div><!-- end main content -->
+
+    <div class="col-md-3 sidebar right-sidebar"><!-- main sidebar -->
+                <aside id="text-72" class="widget widget_text">			<div class="textwidget"><form action="http://www.google.com" id="cse-search-box" target="_blank">
+  <div>
+    <input type="hidden" name="cx" value="partner-pub-8564525228188727:5095704158" />
+    <input type="hidden" name="ie" value="UTF-8" />
+    <input class="form-control" type="text" name="q" size="30" />
+    <!-- <input type="submit" name="sa" value="Search" /> -->
+  </div>
+</form>
+
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en"></script>
+</div>
+		</aside><aside id="text-54" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- c4learn_topper_sidebar -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8564525228188727"
+     data-ad-slot="4330968154"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside><aside id="text-65" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- c4learn_middle_sidebar -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:600px"
+     data-ad-client="ca-pub-8564525228188727"
+     data-ad-slot="7284434551"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside><aside id="text-71" class="widget widget_text">			<div class="textwidget"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- c4learn_bottom_sidebar -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-8564525228188727"
+     data-ad-slot="5807701357"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+		</aside>    </div><!-- end main sidebar -->
+
+    </div>
+</div>
+
+
+        
+            
+            </div><!-- end main -->
+
+            
+            <div class="footer-wrapper ">
+
+                
+                    
+<div id="footer" class="footer-1 show-ribbon">
+    
+        <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-left">
+                                            </div>
+
+            
+                            <div class="footer-right">
+                    © Copyright 2015. All Rights Reserved.                </div>
+                    </div>
+    </div>
+    </div>
+                
+            </div>
+
+                <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-start-slideshow="true" data-filter=":even">
+        <div class="slides"></div>
+        <h3 class="title">&nbsp;</h3>
+        <a class="prev"></a>
+        <a class="next"></a>
+        <a class="close"></a>
+        <a class="play-pause"></a>
+        <ol class="indicator"></ol>
+    </div>
+
+        
+    </div><!-- end wrapper -->
+
+<div class="panel-overlay"></div>
+<div class="filter-overlay"></div>
+
+<div id="nav-panel" class="">
+    <div class="menu-wrap"><ul id="menu-main-menu-1" class="mobile-menu accordion-menu"><li id="accordion-menu-item-8092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home "><a href="http://www.c4learn.com/" class="">Home</a></li>
+<li id="accordion-menu-item-12808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><h5><i class="fa fa-list"></i>Programming</h5>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-12809" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/learn-c-programming-language/" class="">C Programming</a></li>
+	<li id="accordion-menu-item-6427" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/javaprogramming/" class="">Java Programming</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-10439" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/c-programs/" class="">C Programs</a></li>
+<li id="accordion-menu-item-11548" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/mcq" class="">MCQ</a></li>
+<li id="accordion-menu-item-11608" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://c4learn.com/tutorials/" class="">Tutorials</a></li>
+<li id="accordion-menu-item-11910" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/programs/" class="">Examples</a></li>
+<li id="accordion-menu-item-11674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><a href="http://www.c4learn.com/civilservices/" class="">Exams</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-12828" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/civilservices/" class="">Civil Services</a></li>
+	<li id="accordion-menu-item-12829" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/current-affairs/" class="">Current Affairs</a></li>
+</ul>
+</li>
+</ul></div><div class="menu-wrap"><ul id="menu-main-menu-2" class="top-links accordion-menu show-arrow"><li id="accordion-menu-item-8092" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home "><a href="http://www.c4learn.com/" class="">Home</a></li>
+<li id="accordion-menu-item-12808" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><h5><i class="fa fa-list"></i>Programming</h5>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-12809" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/learn-c-programming-language/" class="">C Programming</a></li>
+	<li id="accordion-menu-item-6427" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/javaprogramming/" class="">Java Programming</a></li>
+</ul>
+</li>
+<li id="accordion-menu-item-10439" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/c-programs/" class="">C Programs</a></li>
+<li id="accordion-menu-item-11548" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/mcq" class="">MCQ</a></li>
+<li id="accordion-menu-item-11608" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://c4learn.com/tutorials/" class="">Tutorials</a></li>
+<li id="accordion-menu-item-11910" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/programs/" class="">Examples</a></li>
+<li id="accordion-menu-item-11674" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has-sub"><a href="http://www.c4learn.com/civilservices/" class="">Exams</a>
+<span class="arrow"></span><ul class="sub-menu">
+	<li id="accordion-menu-item-12828" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/civilservices/" class="">Civil Services</a></li>
+	<li id="accordion-menu-item-12829" class="menu-item menu-item-type-custom menu-item-object-custom "><a href="http://www.c4learn.com/current-affairs/" class="">Current Affairs</a></li>
+</ul>
+</li>
+</ul></div><div class="share-links"><a target="_blank" class="share-facebook" href="https://www.facebook.com/c4learn" title="Facebook"></a><a target="_blank" class="share-twitter" href="https://twitter.com/c4learn" title="Twitter"></a><a target="_blank" class="share-rss" href="http://feeds.feedburner.com/feedburner/fOhV" title="RSS"></a><a target="_blank" class="share-pinterest" href="https://www.pinterest.com/c4learn/" title="Pinterest"></a><a target="_blank" class="share-googleplus" href="https://plus.google.com/+C4learncom/posts" title="Google Plus"></a></div></div>
+<!--[if lt IE 9]>
+<script src="http://www.c4learn.com/wp-content/themes/porto/porto/js/html5shiv.min.js"></script>
+<script src="http://www.c4learn.com/wp-content/themes/porto/porto/js/respond.min.js"></script>
+<![endif]-->
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+var js_porto_vars = {"rtl":"","ajax_url":"http:\/\/www.c4learn.com\/wp-admin\/admin-ajax.php","post_zoom":"1","portfolio_zoom":"0","member_zoom":"1","page_zoom":"1","container_width":"1170","grid_gutter_width":"20","show_sticky_header":"0","show_sticky_header_tablet":"0","show_sticky_header_mobile":"1","request_error":"The requested content cannot be loaded.<br\/>Please try again later.","ajax_loader_url":"\/\/www.c4learn.com\/wp-content\/themes\/porto\/porto\/images\/ajax-loader@2x.gif"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://www.c4learn.com/wp-content/themes/porto/porto/js/theme.min.js?ver=2.5.3'></script>
+<script type='text/javascript' src='http://www.c4learn.com/wp-includes/js/wp-embed.min.js'></script>
+<script src="http://www.c4learn.com/wp-content/cache/min/1/68750798a81eb6fc27ec2c132d5667dd.js" data-minify="1"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+    if ($(window).width() < 768) {
+        $("#sidebarIndex").hide();
+        $(".right-sidebar").hide();
+        
+    } else {
+        $("#sidebarIndex").show();
+        
+    }
+    
+    $(".mobile-toggle").click(function () {
+            $("#sidebarIndex").toggle("slow");
+        });
+    
+});
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-8564525228188727",
+          enable_page_level_ads: true
+     });
+</script>    </script>
+
+</body>
+</html>

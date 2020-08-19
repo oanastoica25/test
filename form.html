@@ -1,0 +1,112 @@
+﻿<html>
+<head><title>Formular</title>
+<style>
+body {
+  background-image: url("Imagini/fundalhome3.jpg");
+  background-attachment: fixed;
+   background-size:cover;
+   background-repeat: no-repet;
+   background-image{   
+   opacity: 0.4;
+   filter: alpha(opacity=40); /* For IE8 and earlier */
+}
+h2 {
+   text-align:center;
+    text-size:20;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px white;
+}
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: red;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+<table align="center" padding="2" >
+<tr><td>
+<H2>  Vă rugăm să completați acest formular!</H2>
+<h2>
+<form>
+<fieldset>
+<legend>
+Informații personale:
+</legend>
+Nume
+<input type="text" name="Nume">
+<br>
+Prenume
+<input type="text" name="Prenume">
+<br>
+Vârstă
+<input type="number" name="Vârstă"><br>
+Sex<br>
+<input type="radio" name="Gender" value="masculin">Masculin
+<br>
+<input type="radio" name="Gender" value="masculin">Feminin
+</fieldset><br>
+Clasa:
+<form action=" ">
+<select name="clasa">
+<option value="gimnaziu">Gimnaziu</option>
+<option value="a 9-a">a 9-a</option>
+<option value="a 10-a">a 10-a</option>
+<option value="a 11-a">a 11-a</option>
+<option value="a 12-a">a 12-a</option>
+<option value="facultate">Facultate</option>
+</select>
+<fieldset>
+<legend>
+Cunoștințe :
+</legend>
+Limbaje cunoscute:<BR>
+C++
+<input type="checkbox" name="limbaj" value="C++"><br>
+SQL
+<input type="checkbox" name="limbaj" value="SQL"><br>
+C#
+<input type="checkbox" name="limbaj" value="C#"><br>
+Pascal
+<input type="checkbox" name="limbaj" value="Pascal"><br>
+HTML
+<input type="checkbox" name="limbaj" value="HTML"><br>
+Cunoști bazele limbajului de programare C++?<br>
+<input type="radio" name="C++" value="da/nu">Nu<br>
+<input type="radio" name="C++" value="da/nu">Da<br>
+</fieldset>
+<fieldset>
+<legend>
+Părere
+</legend>
+<table cellpadding="80">
+<tr>
+<td><textarea rows="30" cols="50"> Aici vă puteți exprima opinia cu privire la acest site web.</textarea></td>
+<td><img src="Imagini/vector1.jpg" align="right"><br></td></tr></table>
+<input type="submit" value="Submit">
+</form>
+</h2>
+</td></tr></table>
+</body>
+</html>

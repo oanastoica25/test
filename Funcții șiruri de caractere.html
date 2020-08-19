@@ -1,0 +1,95 @@
+﻿<html>
+<head>
+    <title> Funcții șiruri de caractere</title>
+<style>
+body {
+  background-image: url("Imagini/f1.jpg");
+  background-attachment: fixed;
+   background-size: cover;
+   color: black;
+  font-size:100px;
+   text-shadow: 0.5px 0.5px 0.5px black;
+}
+</style>
+</head>
+<body>
+<b><center><font face=" " size=" 6" color=" "> Funcții ale șirurilor de caractere</font></center></b>
+<table>
+<ol type="I">
+<tr><td><li><b><font face=" " size=" 4" color=" orange">Funcția strlen</font></b></li>
+<u>- permite aflarea lungimii exacte a unui sir de caractere (exceptannd caracterul NULL)</u>.<br>
+Exemplu: Se citeste de la tastatura un sir de caractere. Să se afiseze lungimea acestuia.<BR>
+<font face=" " color=" red" >! Atenție:<br> - lungimea șirului nu include caracterul NULL aflat la sfarșitul șirului de caractere (terminator al șirului).<br>
+<img src="Imagini/strlen.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strupr</font></b></li>
+<u>- permite transformarea literelor mici în litere mari.</u><br>
+Exemplu: Se citește de la tastatură un șir de caractere. Să se convertească toate literele mici în litere mari.<br>
+<img src="Imagini/strupr.png"></td></tr>
+<tr><td><li><b><font face=" " size=" 4" color=" orange">Funcția strlwr</font></b></li>
+<u>- permite transformarea literelor mari în litere mici.</u><br>
+Exemplu: Se citește de la tastatură un șir de caractere. Să se convertească toate literele mari în litere mici.<br>
+<img src=" Imagini/strlwr.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strcat</font></b></li>
+<u>- permite concatenarea a doua șiruri de caractere.</u><br>
+Sintaxa:
+   strcat(șir1, șir2) - adaugă șirul șir2 la șirul șir1 - al doilea șir rămâne neschimbat.<br>
+Exemplu: Se citesc de la tastatură doua șiruri de caractere. Să se concateneze cele doua șiruri și să se afișeze conținutul acestora în urma concatenării.<br>
+<img src="Imagini/strcat.png"></td></tr>
+<tr><td><li><b><font face=" " size=" 4" color=" orange">Funcția strncat</font></b></li>
+   strncat(șir1, șir2, n) - <u>adaugă primele n caractere din șirul șir2 la șirul șir1 - al doilea șir rămane neschimbat.</u><br>
+Exemplu: Se citesc de la tastatură două șiruri de caractere. Să se concateneze cele doua șiruri prin adăugarea primelor n caractere din al doilea șir la sfarșitul primului șir, iar apoi și să se afișeze conținutul celor două șiruri în urma concatenării.<br>
+<img src="Imagini/strncat.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strcpy</font></b></li>
+<u>- permite copierea unui șir de caractere în alt șir de caractere.</u><br>
+Sintaxa:
+   strcpy(sir1, sir2) - copiază șirul șir2 în șirul șir1 - primul șir va fi suprascris în cazul în care acesta este inițializat anterior.<br>
+Exemplu: Se citesc de la tastatură doua șiruri de caractere. Să se copieze al doilea șir de caractere în primul și să se afișeze conținutul celor două șiruri în urma acestei operații.<br>
+<img src="Imagini/strcpy.png"></td></tr>
+<tr><td><li><b><font face=" " size=" 4" color=" orange"> Funcția strncpy</font></b></li>
+strncpy(șir1, șir2, n)<u> - copiază primele n caractere din șirul șir2 în șirul șir1 - primul șir va fi suprascris în cazul în care acesta este inițializat anterior.</u><br>
+Exemplu: Se citesc de la tastatură doua șiruri de caractere. Să se copieze primele n caractere din al doilea șir de caractere în primul și să se afișeze conținutul celor două șiruri în urma acestei operații.<br>
+<img src="Imagini/strncpy.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strcmp</font></b></li>
+<u>- permite compararea a două șiruri de caractere prin compararea codurilor ASCII ale caracterelor corespondențe din fiecare șir.</u> Se citește caracter cu caracter din fiecare șir și se compară codurile ASCII până când codurile diferă sau până când se întalnește primul caracter NULL.<br>
+Sintaxa:
+   strcmp(șir1, șir2) - returnează:<ul type=" ">
+<li>un numar negativ, dacă primul șir este mai mic decât al doilea</li>
+<li>0, daca șirurile sunt egale</li>
+<li>un numar pozitiv, dacă primul șir este mai mare decât al doilea</li></ul><br>
+Exemplu: Se citesc de la tastatură două șiruri de caractere. Să se indice care dintre cele două șiruri este mai mare sau dacă cele doua șiruri sunt identice.<br>
+<img src="Imagini/strcmp.png"></td><tr>
+<tr><td><li><b><font face=" " size=" 4" color=" orange">Funcția strncmp</font></b></li>
+<i> strncmp(sir1, sir2, n)</i><br>
+Această formă<u> permite compararea a două șiruri de caractere prin compararea codurilor ASCII ale caracterelor corespondente din fiecare șir.</u> Se citește caracter cu caracter din fiecare șir și se compară codurile ASCII până când codurile diferă, sau până când se întâlnește primul caracter NULL, sau până când se ajunge la caracterul numărul n în oricare din cele două șiruri.<br>
+Exemplu: Se citesc de la tastatură doua șiruri de caractere. Să se determine dacă primele n caractere ale celor 2 șiruri sunt identice.<br>
+<img src=" Imagini/strncmp.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strchr</font></b></li>
+<u>- permite căutarea unui caracter într-un șir de caractere.<b> Căutarea se face de la stânga la dreapta </b>iar rezultatul apelului funcției este subșirul de caractere care începe cu prima apariție a caracterului căutat și restul caracterelor șirului inițial.</u><br>
+Sintaxa:<i> strchr(șir, caracter)</i>
+<br>
+Exemplu: Să se determine pe ce poziție se găsește prima apariție a caracterului c în șirul s, unde șirul s și caracterul c se citesc de la tastatură.<br>
+<img src="Imagini/strchr.png "></td></tr>
+<tr><td><li> <b><font face=" " size=" 4" color=" orange"> Funcția strrchr</font></b></li>
+<i>strrchr(șir, caracter)</i><br>
+Sub această formă, funcția realizează același lucru, <u>căutarea unul caracter într-un șir de caractere, numai că, de această dată, <b>căutarea se face de la dreapta la stanga</b>.<u><br>
+
+Exemplu: Să se determine pe ce poziție se găsește ultima apariție a caracterului c în șirul s, unde șirul s și caracterul c se citesc de la tastatură.<br>
+<img src="Imagini/strrchr.png"></td>
+<td><li><b><font face=" " size=" 4" color=" orange">Funcția strstr</font></b></li>
+<u>- verifică daca un șir reprezintă un subșir al unui șir dat, căutarea făcându-se de la stanga la dreapta.</u> În caz afirmativ, întoarce subșirul format din șirul căutat și restul caracterelor șirului inițial. În caz contrar, întoarce șirul vid. Mai exact, când șirul căutat este găsit în șirul inițial, apelul funcției returnează adresa de memorie corespunzătoare poziției subșirului în cadrul șirului inițial, iar în caz contrar întoarce adresa 0.<br>
+Sintaxa: <i>strstr(șir1, șir2) - verifică dacă șirul șir2 este subșir al șirului șir1.</i><br>
+Observație: Dacă șirul șir2 este întâlnit de mai multe ori în cadrul șirului șir1, atunci apelul funcției returnează adresa de memorie corespunzătoare primei apariții a subșirului în cadrul șirului dat.<br>
+Exemplu: Să se determine dacă șirul b se găsește în șirul a și să se determine poziția primei apariții.<br>
+<img src="Imagini/strstr.png"></td></tr>
+<tr><td><li><b><font face=" " size=" 4" color=" orange">Funcția strrev</font></b></li>
+<u>- returnează în ordine inversă șirul de caractere introdus ca parametru.</u> Șirul inițial este suprascris cu șirul citit în ordine inversă.<br>
+Sintaxa:
+  <i> strrev(șir)</i><br>
+Exemplu: Să se determine dacă șirul a, introdus de la tastatură, este sau nu un palindrom (șirul este identic cu șirul citit invers).<br>
+<td><img src="Imagini/strrev.png"></td></tr>
+</ol>
+</table><br>
+<center><a href="Siruridecaractere.html" target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href="Stive și cozi.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center>
+</body>
+</html>

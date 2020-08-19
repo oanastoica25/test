@@ -1,0 +1,68 @@
+﻿<html>
+<head><title>Conexitate</title>
+<style>
+body {
+  background-image: url("Imagini/fundal14.jpg");
+  background-attachment: fixed;
+background-size : cover;
+ background-repeat: no-repeat;
+}
+</style>
+</head>
+<body>
+<center><b><font face=" "  size="6"color=" orange">CONEXITATE</font></b></center><br><br><br>
+<table>
+<tr>
+<td><b><font face=" "  size="4"color=" orange">LANȚ,CICLU</font></b><br><br>
+<u>Definiție:</u><br> Se numește lanț o succesiune de vârfuri L=[x1,x2...xk] cu proprietatea că oricare două vârfuri consecutive sunt adiacente.<br>
+<b>Lanțul care conține numai vârfuri distincte, două câte două, este lanț elementar.</b><br>
+Lanțul care conține numai muchii distincte este lanț simplu. Dacă muchiile unui lanț nu sunt distincte se numește lanț compus.<br>
+
+Un graf neorientat care nu conține niciun ciclu se numește aciclic.<br></td>
+<td><img src="Imagini/grafaciclic.png"></td>
+<td>Exemple: În graful de mai jos:<br><pre>
+[2,4,1,3,5,7] este un lanț elementar
+[3,5,7,6,5,1] este un lanț neelementar, <br>dar simplu
+[2,3,5,7,6,5,3,1] este un lanț compus
+[1,5,3,2,4,1] este un ciclu elementar
+[1,3,5,7,6,5,1] este un ciclu neelementar</pre></td>
+</tr></table><br><br>
+<table>
+<tr><td>
+<b><font face=" "  size="4"color=" orange">Graf conex. Componente conexe</font></b>
+<img src="Imagini/grafconex.png"></td>
+<td><u>Definiție: </u><br>Un graf neorientat se numește graf conex dacă pentru oricare două vârfuri x și y diferite ale sale, există cel puțin un lanț care le leagă, adică x este extremitatea inițială și y este extremitatea finală.
+Un graf cu un singur nod este, prin definiție, conex.<br>
+<u>Definiție:</u> Se numește componentă conexă a unui graf G=(X,U) un subgraf H=(Y, V), conex, al lui G
+care are proprietatea că nu există nici un lanț în G care să lege un vârf din Y cu un vârf din X – Y.
+<font face=" " color=" red">Un graf este conex dacă admite o singură componentă conexă.</font></table>
+<HR>
+<table>
+<tr><td><b><font face=" "  size="4"color=" orange">ARBORE.PĂDURE</font></b><br>
+<u>Definiție:</u> Se numește arbore un graf conex și aciclic.<br>
+Observații:<ul type=" ">
+<li>Un arbore cu n vârfuri are n-1 muchii.</li>
+<li>Un arbore este un graf conex și minimal cu această proprietate; dacă s-ar mai elimina o muchie, graful nu ar mai fi conex.</li>
+<li>Un arbore este un graf aciclic și maximal cu această proprietate; dacă s-ar mai adăuga o muchie, s-ar obține un ciclu.</li></ul>
+<b>Un graf parțial care este arbore se numește arbore parțial.</b><br>
+<b>Un graf care nu conține cicluri se mai numește pădure. Într-o pădure fiecare componentă conexă este arbore.</b></td>
+<td><img src="Imagini/arbore.png"></td></tr></table>
+<table>
+<tr><td><b><font face=" "  size="4"color=" orange">Graf hamiltonian. Graf eulerian</font></b><br>
+<u>Definiție:</u><br> <b>Se numește graf hamiltonian un graf care conține un ciclu hamiltonian. Se numește ciclu hamiltonian un ciclu elementar care conține toate vârfurile grafulu</b>i.<br>
+
+Exemplu: Graful următor este hamiltonian.</br> Un ciclu hamiltonian este:<br> [1,4,2,3,7,6,5,1]<br>
+<font face=" " color="red">! Teoremă: Un G un graf neorientat. Dacă are n≥3 vârfuri şi gradul oricărui vârf verifică inegalitatea d(x)≥n&frasl;2 atunci G este hamiltonian.</font><br>
+<img src="Imagini/grafh.png"></td>
+<td><u>Definiție:</u><br> <b>Se numește graf eulerian un graf care conține un ciclu eulerian. Se numește ciclu eulerian un ciclu care conține toate muchiile grafului.</b><br>
+
+Exemplu: Graful următor este eulerian. <br>Un ciclu eulerian este:<br> [1,4,2,1,3,2,7,3,5,7,6,5,1]<br>
+<font face=" " color="red">Teoremă: Un graf G = (X,U), fără vârfuri izolate, este eulerian dacă şi numai dacă este conex şi
+gradele tuturor vârfurilor sale sunt numere pare.</font><br>
+<img src="Imagini/grafe.png"></td></tr></table><br>
+<center><a href="GRAFURI NEORIENTATE.html " target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"></a>
+<a href="sfarsit.html " target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a>
+
+
+</body>
+</html>

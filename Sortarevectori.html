@@ -1,0 +1,53 @@
+﻿<html>
+<head><title> Sortarea vectorilor</title>
+<style>
+body {
+  background-image: url("Imagini/fundal7.jpg");
+  background-attachment: fixed;
+
+}
+h1{
+color: black;
+  text-shadow: 0.5px 0.5px 0.5px black;
+font-size:50px;
+}
+</style>
+</head>
+<body>
+<h1><b><center><font face=" " size="6 " color=" red">Algoritmi de sortare a vectorilor</font></center></b>
+<ol tupe=" ">
+<table>
+<tr><td> <li><u><b><font face=" " size="4 " color=" purple" >Interschimbare directa</u></b></font></li><br><u>Funcţionalitate:</u><br> Fiecare element al vectorului va juca pe rând rolul unui pivot. Se parcurg pivoţii
+folosind structura repetitivă for şi la fiecare pas al structurii comparăm pivotul de pe poziţia i cu
+toate elementele aflate după el. Compararea se va face într-o altă structură for şi pentru fiecare
+element găsit care e mai mic decât pivotul se realizează interschimbarea. După ce toate elementele
+au fost pivoţi, vectorul este în întregime sortat. </td>
+<td> <li><b><u><font face=" " size="4 " color=" purple" >Metoda bulelor </b></u></font></li><br><u> Funcţionalitate:</u><br> Ideea care stă la baza metodei constă în formarea de perechi de elemente
+succesive. Elementele fiecărei perechi vor fi ordonate crescător, iar prin mai multe parcurgeri ale
+vectorului se va obţine un şir sortat. După prima parcurgere a vectorului pe ultima poziţie va ajunge
+elementul care este cel mai mare din tot vectorul. După a două parcurgere pe penultima poziţie va
+ajunge al doilea cel mai mare element al vectorului, ş.a.m.d. La final vectorul va fi sortat. </td></tr>
+<tr><td><img src="Imagini/interschimbare.png"></td>
+<td><img src="Imagini/bublev.png"></td></tr>
+<tr><td><<img src=" Imagini/insertie.png"></td>
+<td><b><u><font face=" " size="4 " color=" purple" ><li>Inserţia directă:</b></u></font></li><br> Este cea mai simplă implementare a algoritmului şi se face în felul următor: Se consideră că primele i elemente al vectorului sunt deja sortate. Pentru elementul al (i+1)-lea, din tabloul iniţial, se va găsi poziţia în care trebuie inserat printre primele i elemente. Toate elementele tabloului de la această poziţie şi până la i vor fi deplasate cu o poziţie mai la dreapta iar poziţia eliberată va fi ocupată de elementul i+1.</td><br><br>
+<tr><td> <u><b><font face=" " size="4 " color=" purple" ><li>Sortarea prin numărare</u> </b></font></li><br>
+     Această metodă necesită spaţiu suplimentar de memorie. Ea foloseşte
+următorii vectori:<ul type=" ">
+<li>vectorul sursă (vectorul nesortat) a;</li>
+<li>vectorul destinaţie (vectorul sortat) b;</li>
+<li> vectorul numărător (vectorul de contoare) k.</li>
+<p>Elementele vectorului sursă a[i] se copie în vectorul destinaţie prin
+înserarea în poziţia corespunzătoare, astfel încât, în vectorul destinaţie să
+fie respectată relaţia de ordine. Pentru a se cunoaşte poziţia în care se va
+însera fiecare element, se parcurge vectorul sursă şi se numără în vectorul
+k, pentru fiecare element a[i], câte elemente au valoarea mai mică decât a
+lui. Fiecare element al vectorului k este un contor pentru elementul a[i].
+Valoarea contorului k[i] pentru elementul a[i] reprezintă câte elemente sunt
+mai mici decit el şi arată de fapt poziţia în care trebuie copiat în vectorul b.</p>
+<td><img src="Imagini/numarare.png"></td></tr></table><br>
+<center><a href="vectori.html" target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href="Matrici.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center></h1>
+
+</body>
+</html>

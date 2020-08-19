@@ -1,0 +1,44 @@
+﻿<html>
+<head>
+       <title> Șiruri de caractere</title>
+<style>
+body {
+  background-image: url("Imagini/fundal12.jpg");
+  background-attachment: fixed;
+ background-size:cover;
+ background-repeat: no-repet;
+background-image{   
+opacity: 0.4;
+    filter: alpha(opacity=40); 
+color:color;
+text-shadow: 0.5 px 0.5 px 0.5px black;
+}
+
+</style>
+</head>
+<body>
+<center><b><font face=" "  size="6" color=" orange"> Șiruri de caractere</font></b></center>
+<table>
+<tr><td>
+<b>Șirurile de caractere </b>reprezintă un tip special de tablou unidimensional (vector), în care ultimul caracter este întotdeauna caracterul NULL (caracterul care are codul 0). Acest caracter nu se poate introduce niciodată de la tastatură, ci este completat automat.<br>
+<u>Declararea șirurilor de caractere</u><br>
+Declarația unui șir de caractere se realizează prin specificarea tipului componentelor șirului, identificatorul șirului, urmat apoi de dimensiunea acestuia între paranteze drepte.</u><br><img src="Imagini/declararesc.png"><br>
+<font face=" " color="red">! Datorită caracterului NULL, la declararea șirului de caractere se adaugă 1 la dimensiunea lui normală, deci, dacă lungimea șirului de caracatere ar fi de exemplu 10, în momentul declarării variabilei respective, lungimea acesteia va fi 11.</font></td>
+<td><img src="Imagini/exsirdecaractere.png" width="400" height="200"><br></tr></table>
+<center><u><B><font face=" " color=" " size="4">Citirea/afișarea șirurilor de caractere</font></B></u></center>
+<table>
+<tr><td><br>a) Citirea unui șir de caractere se poate face ca citirea oricărui tablou, într-un for, caracter cu caracter <U>(deși nu este recomandată)</U>.<br>
+ Se poate face pur și simplu, folosind ‘cin>>’ . Caracterul nul este adaugat automat. Dezavantajul este că în acest fel nu se pot citi șiruri care conțin mai multe cuvinte separate prin spații. Citirea șirului se sfarșește la întalnirea primului caracter blank (de ex, dacă se citește “ora de informatică”, variabila c va reține numai “ora”).<br>
+<img src=" Imagini/citiresc1.png" ><br>
+</td>
+<td>b) Se poate folosi o functie specială pentru citirea șirurilor de caractere, inclusă în biblioteca <font face=" " color=" red">,,string.h" </font><U>(varianta recomandata).</U>
+ Funcția ‘cin.get’ citește un șir de caractere sau până când au fost citite nr-1 caractere, sau dacă s-a întalnit caracterul x. Al treilea parametru poate lipsi, caz în care el este implicit caracterul ‟\n‟ (new line). Sunt citite și caracterele albe, caracterul nul este inserat automat iar caracterul transmis ca ultim parametru nu este inserat în șir.<br>
+<img src="Imagini/citiresc4.png"><br>
+<img src="Imagini/citiresc3.png"></td></tr>
+<tr><td><font face=" " color="red">! Observație: În cazul utilizării repetate a funcției cin.get(a,nr,x), după fiecare folosire trebuie citit caracterul de la sfarșitul fiecărui șir , adică ‟\n‟ (în caz contrar, acest caracter va fi încărcat la începutul următorului șir, a cărui citire se termină la caracterul Enter, deci citirea celui de-al doilea șir se termină înainte de a începe, iar al doilea șir va fi șirul vid). Această citire a caracterului ‟\n‟ se realizează folosind cin.get() fară parametri.</font></td>
+<td><img src="Imagini/citiresc6.png"></td></tr>
+</table><br>
+<center><a href="Struct.html" target="Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href="Funcții șiruri de caractere.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"></a></center>
+</body>
+</html>

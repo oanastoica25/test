@@ -1,0 +1,125 @@
+﻿<html>
+<head>
+      <title> Vocabularul limbajului C++ </title>
+<style>
+body {
+  background-image: url("Imagini/fundal11.jpg");
+  background-attachment: fixed;
+ background-size:cover;
+ background-repeat: no-repet;
+background-image{   
+opacity: 0.4;
+    filter: alpha(opacity=40); /* For IE8 and earlier */
+color:color;
+text-shadow: 0.5 px 0.5 px 0.5px black;
+}
+
+</style>
+</head>
+<body>
+   <center><B><font face=" " color="FA 80 72" size="6">ELEMENTE DE BAZA ALE LIMBAJULUI</font></B></center>
+<ol type=" ">
+    <li> <u><font face="Lucida Handwriting" size="3">Setul de caractere</font></u></li><br>
+Setul de caractere reprezintă ansamblul de caractere cu ajutorul cărora se poate realiza un
+program C++. Acesta este alcătuit din: <ul type="square">
+<li>litere mari și mici ale alfabetului englez(A-Z,a-z);</li>
+<li>cifrele sistemului de numerație în baza 10(0-9);</li>
+<li>caractere speciale(+,-,/,=,%,<,>,:,;,#,$,@,blank(spațiu)).</li>
+</ul><br><br>
+ <li><u><font face="Lucida Handwriting" size="3">Identificatori. Cuvinte cheie </font></u></li><br>
+<table border="0">
+<tr>
+<td > Identificatorul este o succesiune de litere, cifre sau caracterul special underscor(_) din care prima nu trebuie să fie cifră. Cu ajutorul identificatorilor se asociază nume constantelor,
+variabilelor, funcțiilor, etc. Exemple de identificatori:<b> a, c1, contor_cifre, </b>etc.
+Limbajul C++, ca orice limbaj de programare, este compus din câteva denumiri(identificatori) cu o semnificaţie bine stabilită, numite <i>cuvinte cheie.</i><br>
+<img src="Imagini/semnul-exclamarii.jpg " width=" 50" height=" 25"><font face=" " color="red">Observaţie:când alegeţi denumiri de variabile pentru programe <b>să nu utilizaţi</b> aceste denumiri </font>.</td>
+<td><img src="Imagini/cuvcheie.JPG"></td></table>
+<li><u><font face="Lucida Handwriting" size="3">Comentarii</font></u></li><br>
+<p>Un comentariu, în limbajul C++, începe cu semnul //comentariu - pentru a scrie un comentariu
+pe o singură linie – sau cu semnul /* comentariu */ - pentru a scrie un comentariu pe mai multe
+linii. Comentariile nu au niciun efect asupra comportamentului programului. Programatorul poate
+să le folosească pentru a include explicaţii scurte sau observaţii asupra codului sursă.</p>
+<table>
+<tr><td><u><font face="Lucida Handwriting" size="3"><li>Codul ASCII </font></u></li><br>
+<p>(American Standard Code for Information Interchange – Codul Standard American pentru Schimbul de Informații). <strong> Codul ASCII</strong> reprezintă un sistem de codificare a caracterelor, care are la bază alfabetul englez. Există 95 de caractere ASCII care pot fi imprimate, numerotate de la 32 la 126. Restul caracterelor sunt marcaje, cum ar fi NULL, TAB  sau DEL. Pe scurt, fiecare caracter ce poate fi citit de la tastatură este codificat folosind ASCII pentru a avea un limbaj comun pe toate dispozitivele care se folosesc de informație.<br>
+</ul>
+<font face=" " color="red">! În esență, atunci când utilizatorul apasă tasta a pe tastatură, calculatorul nu primește decât valoarea codului ASCII, în baza 2, 8 sau 16 (depinde de sistemul de calcul, sistemul de operare). Valorile caracterelor în cod ASCII poate fi consultate folosind tabelul de alături</font face></td>
+<td><img src="Imagini/ascii1.png" width=" 550" height="300 "></td></tr>
+</table>
+<h3>Scrierea și citirea în C++</h3>
+<table>
+<tr><td>Pentru a realiza scrieri pe ecran se folosește fluxul cout<<. Cuvântul cheie cout este acronimul
+de la console output și se mai numește - stream de ieșire. Forma generală a acestui stream este:cout<<a<<b<<...<n ;<</td>
+     <td>Pentru a realiza citiri de la tastatură se folosește fluxul cin>>. Cuvântul cheie cin este
+acronimul de la console input și se mai numește stream de intrare. Forma generală a acestui
+stream este cin>>a>>b>>……>>n;  </td></tr>
+    <tr> <td><img src="Imagini/cout.png" weight=" 400" height="200 "></td>
+      <td><img src="Imagini/cin.png" width=" 400" height=" 200"></td></tr>
+<tr><img src="Imagini/cincout.png" align="center"><figcapture>   Se calculeaza suma,produsul,câtul,restul împarțirii și se afișează pe rând.</figcapture></tr>
+</table>
+<h2>Tipuri de date</h2>
+<table>
+<tr><td><img src="Imagini/tipdedate.png"></td>
+      <td>Un tip de date specifică (precizează):
+<ul type= " "><li>mulţimea de valori pe care variabila respectivă le poate lua</li>
+<li>cât şi setul de operaţii pe care programatorul le poate efectua cu acea variabilă.</li></ul><br>
+<tr> <td><u><h2><b>1)VARIABILE</b></u></h2><br>
+<img src="Imagini/variabila.png">
+<h3>DECLARAREA VARIABILELOR</h3>
+Sintaxa:  <font face="" size="5" color="red">tip_dată nume;</font>
+unde:
+<pre>•<strong>tip_dată</strong> precizează tipul datei memorate în variabila de memorie;
+<strong>•nume</strong> este identificatorul variabilei de memorie.</pre>
+Exemple:<ul type=" ">
+ <li>int a;
+ <li>int x,y; </li>
+ <li> char b; </li>
+ <li>int a,b=1, c=2; </li>
+ <li>float d=1; </li>
+ <li> char f='a'; </li>
+  <li>long x1,x2; </li></ul>
+</td>
+<td><h2><u><b>2)CONSTANTE</b></u></h2><br>
+Sunt reprezentate tot printr-un caracter sau o insiruire de caractere alfanumerice, insa, spre deosebire de variabilele normale, acestea nu-si vor modifica valoarea pe parcursul intregului program. Constantele pot avea de asemenea valori intregi, reale, caracter, etc.
+<h3>DECLARAREA CONSTANTELOR</h3>
+<p>Sintaxa:
+ <font face="" size="5" color="red">const [tip_dată] nume=valoare;</font>
+unde:
+<pre>• <strong>const</strong> este un cuvânt cheie care înseamnă definirea unei constante
+simbolice;
+• <strong>tip_dată</strong> precizează tipul constante (poate lipsi);
+• <strong>nume</strong> este identificatorul constantei;
+• <strong>valoare</strong> este valoarea constantei.</pre>
+Exemple:<ul type=" ">
+ <li>const int a=0;</li>
+ <li>const int x=-5;</li>
+<li> const b=0;</li>
+<li> const float PI=3.14;</li>
+ <li>const char a=„a‟;</li></ul></td></tr></table><hr>
+<table>
+<b><H2>OPERATORI ȘI EXPRESII</H2></b>
+<tr><td>
+OPERATORII sunt caractere speciale care indică operaţia care se efectuează
+în cadrul unui program.
+Clasificarea operatorilor:<ul type="disc">
+<li>operatori aritmetici;</li>
+<li>operatori relaţionali;</li>
+<li>operatori de egalitate;</li>
+<li>operatori de incrementare şi decrementare;</li>
+<li>operatori logici;</li>
+<li>operatori de atribuire;</li>
+<li>operatorul „  , ‟ (virgulă);</li>
+<li>operatorul de conversie explicită.</li></td>
+<td cellpadding="40"><img src="Imagini/operatori.jpg" align="center"></td>
+<tr><td><img src="Imagini/operatorirl.png" height="300" weight=" 400" ></td>
+      <td><img src="Imagini/operatoria.png" height="300" weight=" 400" ></td>
+<tr><td colspacing="2">EXPRESII <br> 
+     <img src="Imagini/Expresiilogice.jpg"height="300" weight=" 400"></td>
+      <td> O <strong>expresie</strong> poate fi:<ul type="square">
+<li>o constanta/variabila</li>
+<li>o combinatie de tipul operator expresie (cazul operatorilor unari: – a)</li>
+<li>o combinatie de tipul expresie operator expresie (cazul operatorilor binari: a+b )</li></ul></td></tr>
+</table><br>
+<center><a href=" Structuri.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"</a></center>
+</body>
+</html>

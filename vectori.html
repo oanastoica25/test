@@ -1,0 +1,64 @@
+﻿<html>
+<head>
+     <title> VECTORI</title>
+<style>
+body {
+  color: black;
+  text-shadow: 0.5px 0.5px 0.5px black;
+}
+</style>
+<body>
+<body background="Imagini/fundal6.jpg">
+<b><center><font face="Arial" size=" 5" color=" pink"> VECTORI SAU TABLOURI UNIDIMENSIONALE</font></center></b>
+<table><tr><td><p><strong>Vectorii sau tablourile unidimensionale</strong> sunt structuri de date bine definite si organizate in memorie. Cu ajutorul acestora, se pot păstra in memorie si accesa ulterior mai multe variabile, fără a fi nevoie de reținerea explicita a fiecăreia dintre ele. <u>Vectorii se folosesc, cel mai adesea, când numărul de variabile necesare într-o problema variază sau este de dimensiune mare.</u></p></td>
+<td><img src="Imagini/vector.png" width=" 600" height=" 200" ></td></tr></table>
+<table><tr colspan="3">
+<td><H4><i>Declararea vector:</i></H4>
+<img src="Imagini/declararev.png"><br>
+<td><font face= " " color ="red">La <u>d e c l a r a r e a </u> unui tablou trebuiesc precizate:<ul type=" ">
+<li>tipul datelor din tablou</li>
+<li>numele tabloului</li>
+<li>numarul de componente </li></ul></font></ul></td>
+<td><font face=" " size="3" color="blue"> Exemple: int v[100], float v[40] , char[32],</font><br>
+<img src="Imagini/exv.png"></td></tr>
+<tr>
+<td><h2><i>Citirea unui vector</i></h3><br>
+Se incepe citirea de la 0, primul element fiind salvat în v[0].Se poate decide de pe ce poziție să înceapă : 1 sau 0.<br>
+<img src="Imagini/citirev.png"></td>
+<td><h2><i>Accesul elementelor dintr-un vector</i></h2><br>
+Accesul fiecărui element al tabloului se face prin numele acestuia urmat între paranteze drepte [ ] de indicele sau (adică poziția pe care acesta o ocupă în tablou)
+În limbajul C++ , indicii tablourilor încep numaratoarea de la 0 si se termină la N – 1 (unde N este numarul total de elemente). <br>
+<img src="Imagini/accesv.png"></td>
+<td><h2><i> Afișarea unui vector</i><h2><br>
+<img src="Imagini/afisarev.png" ></td>
+</tr></table><hr>
+<table>
+<center><b><h2><i>Inserarea și ștergerea elementelor dintr-un „vector”</h2></i></b></center>
+<tr><td><u><H3>Adaugarea unui element nou</h3></u><br>
+Pentru a adauga un element într-un tablou unidimensional, tot ceea ce trebuie să facem este să mărim dimensiunea logică ,, n" a vectorului, și să memorăm noul element în căsuța ce am eliberat-o.</td>
+<td><img src="Imagini/adaugareelnou.png"></td></tr>
+<tr>
+<td><u><H3>Inserarea unui element nou</H3></u><br>
+Presupunând că avem un șir „V” cu „n” elemente, și dorim să inseram elementul „numar_nou” pe poziția „p”.<br>
+<img src="Imagini/inserareelnou.png"><br>
+<p><font face=" " size=" " color="red">În imaginea de mai sus, am inserat elementul „13” pe poziția 3. Cum am procedat?<pre>
+ Am mărit mai întai dimensiunea logică (n) cu un element.
+ Am parcurs vectorul de la coadă „și am tras” toate elementele după indicele 3 cu o poziție la dreapta.
+ Am înlocuit valoarea din V[3].</pre></font></p><br>
+<img src="Imagini/inserare2.png"></td><br>
+<td><u><H3>Ștergerea unui element</H3></u><br>
+Presupunând că avem un șir „V” cu „n” elemente, și dorim să ștergem elementul de pe poziția „p”.<br>
+<img src="Imagini/stergere.png"><br>
+<p><font face=" " size=" " color="red">În imaginea de mai sus am șters elementul de pe poziția 2. Cum am procedat?<pre>
+Am parcurs vectorul începând de pe poziția „p”.
+Am tras toate elementele la stânga.
+Am micșorat ,,n" cu o unitate</pre></font></p><br>
+<img src="Imagini/stergere2.png"></td><br></table>
+<p>Există anumite metode de sortare a vectorilor,dintre care,cele mai cunoscute:</p><ul type=" ">
+<li>Interschimbarea directă</li>
+<li>Metoda bulelor </li>
+</ul><br>
+<center><a href=" algoritmifundamentali.html" target=" Curs"><img src="Imagini/sageata1.jpg" width="100" height="100"</a>
+<a href="Sortarevectori.html" target="Curs"><img src="Imagini/sageata2.jpg" width="100" height="100"</a></center>
+</body>
+</html>
